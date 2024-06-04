@@ -1,0 +1,22 @@
+.announcements {
+    background-color: #f9f9f9;
+    padding: 20px;
+    margin: 20px 0;
+    border-radius: 8px;
+  }
+  
+  .announcements h2 {
+    color: #4CAF50;
+    font-size: 28px;
+  }
+  
+  .announcements ul {
+    list-style: none;
+    padding: 0;
+  }
+  
+  .announcements ul li {
+    font-size: 18px;
+    margin: 10px 0;
+  }
+  

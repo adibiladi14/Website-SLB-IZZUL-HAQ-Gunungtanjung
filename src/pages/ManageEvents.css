@@ -1,0 +1,38 @@
+.manage-events {
+    width: 100%;
+    padding: 20px;
+  }
+  
+  .form-group {
+    margin-bottom: 15px;
+  }
+  
+  .form-group label {
+    display: block;
+    margin-bottom: 5px;
+  }
+  
+  .form-group input,
+  .form-group textarea {
+    width: 100%;
+    padding: 8px;
+    box-sizing: border-box;
+  }
+  
+  .event-list {
+    list-style-type: none;
+    padding: 0;
+  }
+  
+  .event-list li {
+    margin-bottom: 15px;
+  }
+  
+  .event-list h3 {
+    margin: 0 0 5px;
+  }
+  
+  .event-list p {
+    margin: 0 0 10px;
+  }
+  

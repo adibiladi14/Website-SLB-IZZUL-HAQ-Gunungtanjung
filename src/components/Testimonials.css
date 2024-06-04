@@ -1,0 +1,24 @@
+.testimonials {
+    background-color: #f4f4f4;
+    padding: 20px;
+    margin: 20px 0;
+    border-radius: 8px;
+  }
+  
+  .testimonials h2 {
+    color: #4CAF50;
+    font-size: 28px;
+  }
+  
+  .testimonial {
+    background-color: white;
+    padding: 10px;
+    margin: 10px 0;
+    border-radius: 8px;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+  }
+  
+  .testimonial p {
+    font-size: 16px;
+  }
+  

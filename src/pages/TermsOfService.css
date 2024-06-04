@@ -1,0 +1,19 @@
+.terms-of-service {
+    padding: 20px;
+    background-color: #f5f5f5;
+    margin: 20px 0;
+    border-radius: 8px;
+  }
+  
+  .terms-of-service h2 {
+    color: #4CAF50;
+    font-size: 28px;
+    margin-bottom: 20px;
+  }
+  
+  .terms-of-service p {
+    font-size: 16px;
+    margin: 10px 0;
+    line-height: 1.6;
+  }
+  

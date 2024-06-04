@@ -1,0 +1,23 @@
+{
+  "development": {
+    "username": "school_user",
+    "password": "biladi",
+    "database": "school_management",
+    "host": "127.0.0.1",
+    "dialect": "postgres"
+  },
+  "test": {
+    "username": "school_user",
+    "password": "biladi",
+    "database": "school_management_test",
+    "host": "127.0.0.1",
+    "dialect": "postgres"
+  },
+  "production": {
+    "username": "school_user",
+    "password": "biladi",
+    "database": "school_management_prod",
+    "host": "127.0.0.1",
+    "dialect": "postgres"
+  }
+}

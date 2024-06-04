@@ -1,0 +1,121 @@
+.header {
+  position: relative;
+  width: 100%;
+  height: 500px; /* Height for desktop */
+  background-size: cover;
+  background-position: center;
+  transition: background-image 1s ease-in-out;
+}
+
+@media (max-width: 768px) {
+  .header {
+    height: 300px; /* Height for mobile */
+  }
+}
+
+.header-nav {
+  position: absolute;
+  top: 10px;
+  left: 0;
+  width: 100%;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 20px;
+}
+
+.header-logo-text {
+  display: flex;
+  align-items: center;
+}
+
+.header-logo {
+  height: 50px; /* Adjust size as needed */
+  margin-right: 10px; /* Space between logo and text */
+  margin-left: 20px; /* Additional margin to keep it away from the edge */
+}
+
+.header-text {
+  display: flex;
+  flex-direction: column;
+  color: white;
+  font-size: 18px;
+}
+
+.header-links {
+  list-style: none;
+  display: flex;
+  margin-right: 20px;
+  padding: 0;
+  transition: max-height 0.3s ease;
+}
+
+.header-links li {
+  margin: 0 20px; /* Adjust spacing */
+}
+
+.header-links li a {
+  color: #ffffff; /* Default color */
+  text-decoration: none;
+  font-weight: bold; /* Make the text bold */
+  font-size: 18px; /* Larger font size */
+  position: relative;
+  transition: color 0.3s ease;
+}
+
+.header-links li a::after {
+  content: '';
+  display: block;
+  width: 0;
+  height: 2px;
+  background: rgb(255, 255, 255);
+  transition: width 0.3s;
+  position: absolute;
+  bottom: -5px;
+  left: 0;
+}
+
+.header-links li a:hover {
+  color: rgb(180, 180, 180); /* Slightly darker color on hover */
+}
+
+.header-links li a:hover::after {
+  width: 100%; /* Underline expands to full width */
+}
+
+.header-toggle {
+  display: none;
+  font-size: 30px;
+  background: none;
+  border: none;
+  color: white;
+  cursor: pointer;
+  margin-top: -10px;
+  margin-right: 20px; /* Adjust spacing */
+}
+
+@media (max-width: 768px) {
+  .header-links {
+    flex-direction: column;
+    position: absolute;
+    top: 60px;
+    right: 0;
+    background: rgba(0, 0, 0, 0.9);
+    width: 100%;
+    max-height: 0;
+    overflow: hidden;
+  }
+
+  .header-links.header-links--open {
+    max-height: 300px; /* Adjust based on number of links */
+  }
+
+  .header-links li {
+    text-align: center;
+    margin: 15px 0;
+  }
+
+  .header-toggle {
+    display: block;
+  }
+}

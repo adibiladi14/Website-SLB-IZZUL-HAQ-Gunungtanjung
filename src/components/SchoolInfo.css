@@ -1,0 +1,17 @@
+.school-info {
+    background-color: #eaeaea;
+    padding: 20px;
+    margin: 20px 0;
+    border-radius: 8px;
+  }
+  
+  .school-info h2 {
+    color: #4CAF50;
+    font-size: 28px;
+  }
+  
+  .school-info p {
+    font-size: 16px;
+    margin: 10px 0;
+  }
+  

@@ -1,0 +1,119 @@
+.navbar {
+  position: fixed;
+  width: 100%;
+  top: 0;
+  left: 0;
+  background: rgba(0, 0, 0, 0.7); /* Transparent background */
+  transition: top 0.3s;
+  z-index: 1000;
+  padding: 10px 20px;
+}
+
+.navbar--hidden {
+  top: -100px; /* Hide the navbar */
+}
+
+.navbar--visible {
+  top: 0; /* Show the navbar */
+}
+
+.navbar-content {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  max-width: 1200px;
+  margin: 0 auto;
+}
+
+.navbar-logo-text {
+  display: flex;
+  align-items: center;
+}
+
+.navbar-logo {
+  height: 50px; /* Adjust size as needed */
+  margin-right: 10px; /* Space between logo and text */
+}
+
+.navbar-text {
+  display: flex;
+  flex-direction: column;
+  color: white;
+  font-size: 18px;
+}
+
+.nav-links {
+  list-style: none;
+  display: flex;
+  margin: 0;
+  padding: 0;
+  color: white;
+  transition: max-height 0.3s ease;
+}
+
+.nav-links li {
+  margin: 0 20px; /* Adjust spacing */
+}
+
+.nav-links li a {
+  color: rgb(255, 255, 255); /* Default color */
+  text-decoration: none;
+  transition: color 0.3s ease, border-bottom 0.3s ease;
+  position: relative;
+}
+
+.nav-links li a::after {
+  content: '';
+  display: block;
+  width: 0;
+  height: 2px;
+  background: rgb(255, 255, 255);
+  transition: width 0.3s;
+  position: absolute;
+  bottom: -5px;
+  left: 0;
+}
+
+.nav-links li a:hover {
+  color: rgb(184, 184, 184); /* Hover color */
+}
+
+.nav-links li a:hover::after {
+  width: 100%; /* Underline expands to full width */
+}
+
+.navbar-toggle {
+  display: none;
+  font-size: 30px;
+  background: none;
+  border: none;
+  color: white;
+  cursor: pointer;
+  margin-right: 20px; /* Adjust spacing */
+}
+
+@media (max-width: 768px) {
+  .nav-links {
+    position: absolute;
+    top: 60px;
+    right: 0;
+    background: rgba(0, 0, 0, 0.9);
+    flex-direction: column;
+    width: 100%;
+    max-height: 0;
+    overflow: hidden;
+  }
+
+  .nav-links.nav-links--open {
+    max-height: 300px; /* Adjust based on number of links */
+  }
+
+  .nav-links li {
+    text-align: center;
+    margin: 15px 0;
+  }
+
+  .navbar-toggle {
+    display: block;
+  }
+}

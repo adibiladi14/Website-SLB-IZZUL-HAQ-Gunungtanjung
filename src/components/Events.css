@@ -1,0 +1,22 @@
+.events {
+    background-color: #f1f1f1;
+    padding: 20px;
+    margin: 20px 0;
+    border-radius: 8px;
+  }
+  
+  .events h2 {
+    color: #4CAF50;
+    font-size: 28px;
+  }
+  
+  .events ul {
+    list-style: none;
+    padding: 0;
+  }
+  
+  .events ul li {
+    font-size: 18px;
+    margin: 10px 0;
+  }
+  

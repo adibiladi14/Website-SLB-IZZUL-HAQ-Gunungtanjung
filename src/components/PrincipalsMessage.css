@@ -1,0 +1,16 @@
+.principals-message {
+    background-color: #f0f0f0;
+    padding: 20px;
+    margin: 20px 0;
+    border-radius: 8px;
+  }
+  
+  .principals-message h2 {
+    color: #4CAF50;
+    font-size: 28px;
+  }
+  
+  .principals-message p {
+    font-size: 16px;
+  }
+  
